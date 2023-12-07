@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idukki</title> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="idukki.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <img src="data:image/png;base64,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" alt="" id="ker">
+            </li>
+              <li class="nav-item ">
+                  <a class="nav-link" id="aa" href="home.html">HOME</a>
+                </li>
+            <li class="nav-item "  >
+              <a class="nav-link" href="gallery.html"  id="aa">GALLERY</a>
+            </li>
+            <li class="nav-item active" >
+              <a class="nav-link" href="District.html"  id="aa">DISTRICT </a>
+            </li>
+            <li class="nav-item " >
+              <a class="nav-link" href="contact.html"  id="aa">CONTACT US</a>
+            </li>
+           
+            
+          </ul>
+       
+        </div>
+      </nav> 
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+            <h1><center> WELCOME TO IDUKKI</center></h1></div>
+            <div class="col-sm-2"></div>
+          </div>
+          <div class="row">
+              
+             
+          
+              <br>
+              <p id="p1">
+                  <img src="https://www.holidify.com/images/tooltipImages/VAGAMON.jpg" align="left" class="cocntent-Img" id="im1">
+                  Idukki is an alluring retreat for tourists in God’s Own Country. Clad in dense green forest and crowned with verdant mountains, it boasts of Anamudi, the highest peak in India. Besides, it also takes pride in being the abode of the second largest arch dam in the world. <br><br>
+                  Idukki is Kerala's second largest district and has been blessed with numerous natural wonders. The high valleys and hill ranges of this landlocked region are fed by three major rivers - Periyar, Thalayar and Thodupuzhayar and their tributaries. Being a part of Chera Dynasty and the home of many early European settlers, Idukki has grabbed a place in the history. <br> It has been an important business hub for many ages as teak, rosewood, sandalwood, ivory and peacock etc are said to be exported from here to many far-off countries.The place is also renowned for its exotic flora and fauna and one can come across many rare species while visiting Idukki.
+          
+              </p>
+          </div>
+        </div><br><br>
+        <div class="container-fluid">
+          <div class="row">
+              
+              <div class="col-sm-12"> <h4>Best spots</h4></div></div>
+              <br>
+        
+     <div class="row">  
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="https://www.holidify.com/images/cmsuploads/compressed/4760_20190422153412.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Pothmedu ViewPoint</h5>
+              <p class="card-text">Pothamedu View Point, situated 5 km off Munnar, is adorned with stretching hills and lush green mountains. One can witness the spectacular wide views of tea, coffee and cardamom plantations of the area. It is an ideal place to witness beautiful sunrises and sunsets.</p>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://www.holidify.com/images/cmsuploads/compressed/E1_20170907143409.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Eravikulam National Park</h5>
+              <p class="card-text">Located a 45 - minute drive away from Munnar, the Eravikulam National Park houses a rich and diverse variety of flora and fauna and is a UNESCO world heritage site. Also known as Rajamalai Wildlife Sanctuary, this place was managed as a game reserve by the Kanan Devan Hills Produce Company before 1971. </p>
+              
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://www.holidify.com/images/cmsuploads/compressed/Cheeyappara-Waterfalls-1_20180207112624.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Cheeyapara WaterFalls</h5>
+              <p class="card-text">Located on the Kochi-Madurai Highway (National Highway 49), the Cheeyarappa Falls is an on-the-way tourist attraction. It falls between Munnar and Kochi, in the district of Idukki, Kerala. One of the largest waterfalls in the state (which is also known as God's own country), the Cheyyappara Falls are a sight to behold. </p>
+              
+            </div>
+          </div>
+        </div>
+        </div>
+<br>
+        <div class="row">  
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://www.holidify.com/images/cmsuploads/compressed/MEESAPULIMALA_-_IDUKKI_20180706124536.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Meeshapulimala</h5>
+                <p class="card-text">The second highest peak in South India, Meesapulimala is an ideal spot for trekking. The starting point of the trek is either Rhodovalley or Silent Valley which lies 6 km before Rhodovalley. After trekking for about 8 km from Rhodovalley, one gets to witness the grasslands, wildlife, rainforests, and small waterfalls.</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://www.holidify.com/images/cmsuploads/compressed/30603412_164787087495335_6367532300447514624_n_20181019165546_20181019165618.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Ayappancoil Hanging Bridge</h5>
+                <p class="card-text">A bridge that is one of a kind and attracts numerous tourists on a daily basis, the Ayyapancoil Hanging Bridge is one of the longest hanging bridges in Kerala. The region surrounding the bridge is so captivating and pleasant that it makes this place a perfect getaway spot for a weekend or an unplanned holiday.</p>
+                
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://www.holidify.com/images/cmsuploads/compressed/Kuravan_kurathi_statue,_ramakkalmedu_20181019175938_20181019180018.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Ramakkalmedu</h5>
+                <p class="card-text">An exquisite hill station situated in the Idukki District on the Kerala-Tamil Nadu state border and home to a number of attractions Ramakkalmedu is a must-visit attraction. Its name can be broken down into three words namely Ram, Kal, and Medu referring to Lord Rama, rock, and land.</p>
+                
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+        <br><br>
+        <footer>
+          <center">Copyright@tourist.org.gov</center"><br><br>
+        </footer>
+</body>
+</html>
